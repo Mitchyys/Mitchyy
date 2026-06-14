@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Name and Grade</title>
+</head>
+
+<body>
+
+    <h1>Student Information</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" /><br /><br />
+
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" /><br /><br />
+
+    <button onclick="submitInfo()">Submit</button>
+
+    <h3>Result:</h3>
+    <div id="result"></div>
+
+    <script>
+        function submitInfo() {
+            const name = document.getElementById('name').value;
+            const grade = document.getElementById('grade').value;
+
+            document.getElementById('result').innerHTML = `Welcome, ${name}! You are enrolled in Grade ${grade}.`;
+        }
+    </script>
+
+</body>
+
+</html>
